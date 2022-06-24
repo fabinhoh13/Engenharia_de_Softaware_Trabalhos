@@ -1,0 +1,192 @@
+\hypertarget{class_flow_inteface}{}\doxysection{Flow\+Inteface Class Reference}
+\label{class_flow_inteface}\index{FlowInteface@{FlowInteface}}
+
+
+Class Flow\+Interface.  
+
+
+
+
+{\ttfamily \#include $<$flowinterface.\+h$>$}
+
+
+
+Inheritance diagram for Flow\+Inteface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flow_inteface__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_flow_inteface_a171c2a6fbb1d971b9f342b3b66643232}{$\sim$\+Flow\+Inteface}} ()
+\item 
+virtual double \mbox{\hyperlink{class_flow_inteface_a6e565de2c20a9d0e28734d8fb91aff00}{execute}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_flow_inteface_a8006e004344774ba910991e10f495ea2}{set\+Name}} (string flow\+Name)=0
+\item 
+virtual void \mbox{\hyperlink{class_flow_inteface_a24070b76342b73a2c83819f28298c83d}{set\+Source}} (\mbox{\hyperlink{class_system_interface}{System\+Interface}} $\ast$source\+Sys)=0
+\item 
+virtual void \mbox{\hyperlink{class_flow_inteface_a37b877a5cdc79bbbc28f5d43bdfeb92a}{set\+Target}} (\mbox{\hyperlink{class_system_interface}{System\+Interface}} $\ast$target\+Sys)=0
+\item 
+virtual string \mbox{\hyperlink{class_flow_inteface_ac9e611a30c6321135403d7068fd210dd}{get\+Name}} () const =0
+\item 
+virtual \mbox{\hyperlink{class_system_interface}{System\+Interface}} $\ast$ \mbox{\hyperlink{class_flow_inteface_a35a913c36594d328d05ae5212777b897}{get\+Source}} () const =0
+\item 
+virtual \mbox{\hyperlink{class_system_interface}{System\+Interface}} $\ast$ \mbox{\hyperlink{class_flow_inteface_abad003c5007e53db59e91e38192dcfef}{get\+Target}} () const =0
+\item 
+virtual void \mbox{\hyperlink{class_flow_inteface_aac1ea3e5da20cd67333209e376ee43cf}{clear\+Source}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_flow_inteface_a333b8dff9c152d81bbe172b195c0fcc1}{clear\+Target}} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Flow\+Interface. 
+
+This Class represents a flow in the General Systems Theory implemented in this code. 
+
+Definition at line \mbox{\hyperlink{flowinterface_8h_source_l00010}{10}} of file \mbox{\hyperlink{flowinterface_8h_source}{flowinterface.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_flow_inteface_a171c2a6fbb1d971b9f342b3b66643232}\label{class_flow_inteface_a171c2a6fbb1d971b9f342b3b66643232}} 
+\index{FlowInteface@{FlowInteface}!````~FlowInteface@{$\sim$FlowInteface}}
+\index{````~FlowInteface@{$\sim$FlowInteface}!FlowInteface@{FlowInteface}}
+\doxysubsubsection{\texorpdfstring{$\sim$FlowInteface()}{~FlowInteface()}}
+{\footnotesize\ttfamily virtual Flow\+Inteface\+::$\sim$\+Flow\+Inteface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+This is the default destructor for the Flow\+Interface Class. 
+
+Definition at line \mbox{\hyperlink{flowinterface_8h_source_l00021}{21}} of file \mbox{\hyperlink{flowinterface_8h_source}{flowinterface.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_flow_inteface_aac1ea3e5da20cd67333209e376ee43cf}\label{class_flow_inteface_aac1ea3e5da20cd67333209e376ee43cf}} 
+\index{FlowInteface@{FlowInteface}!clearSource@{clearSource}}
+\index{clearSource@{clearSource}!FlowInteface@{FlowInteface}}
+\doxysubsubsection{\texorpdfstring{clearSource()}{clearSource()}}
+{\footnotesize\ttfamily virtual void Flow\+Inteface\+::clear\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the pointer of the source attribute as NULL. 
+
+Implemented in \mbox{\hyperlink{class_flow_af262728866a280fef6b60e26257a6d6f}{Flow}}.
+
+\mbox{\Hypertarget{class_flow_inteface_a333b8dff9c152d81bbe172b195c0fcc1}\label{class_flow_inteface_a333b8dff9c152d81bbe172b195c0fcc1}} 
+\index{FlowInteface@{FlowInteface}!clearTarget@{clearTarget}}
+\index{clearTarget@{clearTarget}!FlowInteface@{FlowInteface}}
+\doxysubsubsection{\texorpdfstring{clearTarget()}{clearTarget()}}
+{\footnotesize\ttfamily virtual void Flow\+Inteface\+::clear\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the pointer of the target attribute as NULL. 
+
+Implemented in \mbox{\hyperlink{class_flow_a2d1ef837436f4982de52096c2b802e4e}{Flow}}.
+
+\mbox{\Hypertarget{class_flow_inteface_a6e565de2c20a9d0e28734d8fb91aff00}\label{class_flow_inteface_a6e565de2c20a9d0e28734d8fb91aff00}} 
+\index{FlowInteface@{FlowInteface}!execute@{execute}}
+\index{execute@{execute}!FlowInteface@{FlowInteface}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual double Flow\+Inteface\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+A pure virtual method that will be inherited by subclasses created by the user, and that will contain an equation that will be executed by the model. 
+
+Implemented in \mbox{\hyperlink{class_exponencial_flow_a3f5d88df645307180879a88501b64863}{Exponencial\+Flow}}, \mbox{\hyperlink{class_logistic_flow_afdc1e2ec0eb61b71b367f8fc2677e371}{Logistic\+Flow}}, \mbox{\hyperlink{class_complex_flow_f_adfca5685dfe25d0eadf8abd9bf523829}{Complex\+FlowF}}, \mbox{\hyperlink{class_complex_flow_t_a1ab577756e7a0c1eeaa47779bb0952cc}{Complex\+FlowT}}, \mbox{\hyperlink{class_complex_flow_u_a75627b2a7b0cdbf767c92aa102840458}{Complex\+FlowU}}, \mbox{\hyperlink{class_complex_flow_v_a5478a557bb037d90430ab092569c695a}{Complex\+FlowV}}, \mbox{\hyperlink{class_complex_flow_g_a8cfa9dca03275f0999de008449d16c56}{Complex\+FlowG}}, \mbox{\hyperlink{class_complex_flow_r_a3b8d9d5dca6e0180d48192d48040d17c}{Complex\+FlowR}}, \mbox{\hyperlink{class_exponencial_flow_a3f5d88df645307180879a88501b64863}{Exponencial\+Flow}}, and \mbox{\hyperlink{class_flow_a619be0b590c78202127bc6ac7fb04029}{Flow}}.
+
+\mbox{\Hypertarget{class_flow_inteface_ac9e611a30c6321135403d7068fd210dd}\label{class_flow_inteface_ac9e611a30c6321135403d7068fd210dd}} 
+\index{FlowInteface@{FlowInteface}!getName@{getName}}
+\index{getName@{getName}!FlowInteface@{FlowInteface}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual string Flow\+Inteface\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the name attribute in the Flow\+Interface Class. \begin{DoxyReturn}{Returns}
+string -\/ the content name attribute. ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_flow_a62bbc54ff95eeb0795511519edf32077}{Flow}}.
+
+\mbox{\Hypertarget{class_flow_inteface_a35a913c36594d328d05ae5212777b897}\label{class_flow_inteface_a35a913c36594d328d05ae5212777b897}} 
+\index{FlowInteface@{FlowInteface}!getSource@{getSource}}
+\index{getSource@{getSource}!FlowInteface@{FlowInteface}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_system_interface}{System\+Interface}} $\ast$ Flow\+Inteface\+::get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the source attribute in the Flow\+Interface Class. 
+\begin{DoxyParams}{Parameters}
+{\em source\+Sys} & a pointer to the source target. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_flow_aef65a479d2ac834dd5224a30d977ff8e}{Flow}}.
+
+\mbox{\Hypertarget{class_flow_inteface_abad003c5007e53db59e91e38192dcfef}\label{class_flow_inteface_abad003c5007e53db59e91e38192dcfef}} 
+\index{FlowInteface@{FlowInteface}!getTarget@{getTarget}}
+\index{getTarget@{getTarget}!FlowInteface@{FlowInteface}}
+\doxysubsubsection{\texorpdfstring{getTarget()}{getTarget()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_system_interface}{System\+Interface}} $\ast$ Flow\+Inteface\+::get\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the target attribute in the Flow\+Interface Class. \begin{DoxyReturn}{Returns}
+System$\ast$ -\/ the pointer of the target system. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_flow_ab946f996e57861c604bb6f12b7228a0b}{Flow}}.
+
+\mbox{\Hypertarget{class_flow_inteface_a8006e004344774ba910991e10f495ea2}\label{class_flow_inteface_a8006e004344774ba910991e10f495ea2}} 
+\index{FlowInteface@{FlowInteface}!setName@{setName}}
+\index{setName@{setName}!FlowInteface@{FlowInteface}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily virtual void Flow\+Inteface\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{flow\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the name attribute in the Flow\+Interface Class. 
+\begin{DoxyParams}{Parameters}
+{\em flow\+Name} & which will be set to the current flow. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_flow_a6d7aa9221de09c4f8bb507365e284e5a}{Flow}}.
+
+\mbox{\Hypertarget{class_flow_inteface_a24070b76342b73a2c83819f28298c83d}\label{class_flow_inteface_a24070b76342b73a2c83819f28298c83d}} 
+\index{FlowInteface@{FlowInteface}!setSource@{setSource}}
+\index{setSource@{setSource}!FlowInteface@{FlowInteface}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily virtual void Flow\+Inteface\+::set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system_interface}{System\+Interface}} $\ast$}]{source\+Sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the source attribute in the Flow\+Interface Class. 
+\begin{DoxyParams}{Parameters}
+{\em source\+Sys} & a pointer to the source target. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_flow_ac227f0842585a4fd7a3a41acdc95c793}{Flow}}.
+
+\mbox{\Hypertarget{class_flow_inteface_a37b877a5cdc79bbbc28f5d43bdfeb92a}\label{class_flow_inteface_a37b877a5cdc79bbbc28f5d43bdfeb92a}} 
+\index{FlowInteface@{FlowInteface}!setTarget@{setTarget}}
+\index{setTarget@{setTarget}!FlowInteface@{FlowInteface}}
+\doxysubsubsection{\texorpdfstring{setTarget()}{setTarget()}}
+{\footnotesize\ttfamily virtual void Flow\+Inteface\+::set\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system_interface}{System\+Interface}} $\ast$}]{target\+Sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the target attribute in the Flow\+Interface Class. ~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em target\+Sys} & a pointer to the target system. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_flow_a8c3f04a3824ead3a6aedffc462d8dee4}{Flow}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{flowinterface_8h}{flowinterface.\+h}}\end{DoxyCompactItemize}

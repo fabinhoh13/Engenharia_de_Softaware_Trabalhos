@@ -1,0 +1,215 @@
+\hypertarget{unit__system_8cpp_source}{}\doxysection{unit\+\_\+system.\+cpp}
+\label{unit__system_8cpp_source}\index{test/unit/unit\_system.cpp@{test/unit/unit\_system.cpp}}
+\mbox{\hyperlink{unit__system_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include <assert.h>}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{unit__system_8h}{unit\_system.h}}"{}} }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00004}00004 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00006}00006 \textcolor{comment}{// Function for System class's constructor unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00007}\mbox{\hyperlink{unit__system_8cpp_a9b6fbdfa7c98ba246778d8ecb21b90fd}{00007}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__system_8cpp_a9b6fbdfa7c98ba246778d8ecb21b90fd}{unit\_system\_constructor}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00008}00008     cout << \textcolor{stringliteral}{"{}TEST 1 -\/ Default constructor of the System class without passing parameters"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00009}00009     }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00010}00010     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* system1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}();}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00011}00011     \textcolor{comment}{// Making assertion to verify if the name property was initialized with the default data.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00012}00012     assert(system1-\/>\mbox{\hyperlink{class_system_interface_a32455d8e52d0541cd87bbeb6fe9a24f7}{getName}}() == \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00013}00013     \textcolor{comment}{// Making assertion to verify if the value property was initialized with the default data. }}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00014}00014     assert(system1-\/>\mbox{\hyperlink{class_system_interface_a7d6436985e98f048b28c3fb2136a56a0}{getValue}}() == 0.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00016}00016     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00018}00018     cout << \textcolor{stringliteral}{"{}TEST 2 -\/ Default constructor of the System class with passing parameters"{}} << endl; }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00019}00019     }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00020}00020     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* system2 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Test System"{}}, 10.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00021}00021     \textcolor{comment}{// Making assertion to verify if the name property was initialized with the parameter specified.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00022}00022     assert(system2-\/>\mbox{\hyperlink{class_system_interface_a32455d8e52d0541cd87bbeb6fe9a24f7}{getName}}() == \textcolor{stringliteral}{"{}Test System"{}});}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00023}00023     \textcolor{comment}{// Making assertion to verify if the value property was initialized with the parameter specified. }}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00024}00024     assert(system2-\/>\mbox{\hyperlink{class_system_interface_a7d6436985e98f048b28c3fb2136a56a0}{getValue}}() == 10.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00026}00026     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}}<< \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00027}00027 \}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00029}00029 \textcolor{comment}{// Function for System class's copy constructor unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00030}\mbox{\hyperlink{class_unit_system_af3f0868ef4c36d676b88ad58ca587a88}{00030}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_unit_system_af3f0868ef4c36d676b88ad58ca587a88}{UnitSystem::unit\_system\_copy\_constructor}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00031}00031     cout << \textcolor{stringliteral}{"{}TEST 3 -\/ Copy constructor of the System class"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00032}00032     }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00033}00033     \mbox{\hyperlink{class_system}{System}}* system1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Test System"{}}, 10.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00034}00034     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* system2 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(*system1);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00035}00035     system1-\/>\mbox{\hyperlink{class_system_a26cbee8054a1973f77380dd6d9f28379}{setName}}(\textcolor{stringliteral}{"{}Original Test System"{}});}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00036}00036     system1-\/>\mbox{\hyperlink{class_system_a931178516c532c6e0f3f51d0dc5654fc}{setValue}}(20.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00038}00038     \textcolor{comment}{// Making assertion to verify if the name property was copied before the original's alteration.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00039}00039     assert(system2-\/>\mbox{\hyperlink{class_system_interface_a32455d8e52d0541cd87bbeb6fe9a24f7}{getName}}() == \textcolor{stringliteral}{"{}Test System"{}});}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00040}00040     \textcolor{comment}{// Making assertion to verify if the value property was copied before the original's alteration.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00041}00041     assert(system2-\/>\mbox{\hyperlink{class_system_interface_a7d6436985e98f048b28c3fb2136a56a0}{getValue}}() == 10.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00042}00042     \textcolor{comment}{// Making assertion to verify if the System objects aren't pointing to the same memory.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00043}00043     assert(system1 != system2);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00045}00045     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00046}00046 \}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00048}00048 \textcolor{comment}{// Function for the System class' destructor unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00049}\mbox{\hyperlink{unit__system_8cpp_ab4642eeb7c23bfc4315517cc70fb3b3e}{00049}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__system_8cpp_ab4642eeb7c23bfc4315517cc70fb3b3e}{unit\_system\_destructor}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00050}00050     cout << \textcolor{stringliteral}{"{}TEST 4 -\/ Default destructor of the System class"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00051}00051     }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00052}00052     \textcolor{keywordtype}{double} vmBefore, vmAfter, rss;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00054}00054     \textcolor{comment}{// Getting the memory usage previous to the creation of a system.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00055}00055     \mbox{\hyperlink{mem__usage_8cpp_abf350b8cfb93f01b72106eddd2913989}{memory\_usage}}(vmBefore, rss);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00056}00056     }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00057}00057     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* system = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Test System"{}}, 10.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00058}00058     \textcolor{keyword}{delete} system;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00060}00060     \textcolor{comment}{// Getting the memory usage after the creation and destruction of a System object.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00061}00061     \mbox{\hyperlink{mem__usage_8cpp_abf350b8cfb93f01b72106eddd2913989}{memory\_usage}}(vmAfter, rss);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00063}00063     \textcolor{comment}{// Making assertion to verify if the memory usage after the creation and deletion}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00064}00064     \textcolor{comment}{// is the same as before the creation of System object.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00065}00065     assert(vmBefore == vmAfter);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00067}00067     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00068}00068 \}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00070}00070 \textcolor{comment}{// Function for System class' method getName() unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00071}\mbox{\hyperlink{unit__system_8cpp_ac9d051065c245fd414c6db3318a59fdd}{00071}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__system_8cpp_ac9d051065c245fd414c6db3318a59fdd}{unit\_system\_getName}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00072}00072     cout << \textcolor{stringliteral}{"{}TEST 5 -\/ System class's getName() method"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00073}00073     }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00074}00074     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* system = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Test System"{}}, 10.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00076}00076     \textcolor{comment}{// Making assertion to verify if the method returns the System class name and if it's}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00077}00077     \textcolor{comment}{// equal to the parameter previously passed. }}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00078}00078     assert(system-\/>\mbox{\hyperlink{class_system_interface_a32455d8e52d0541cd87bbeb6fe9a24f7}{getName}}() == \textcolor{stringliteral}{"{}Test System"{}});}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00080}00080     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00081}00081 \}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00083}00083 \textcolor{comment}{// Function for System class' method setName() unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00084}\mbox{\hyperlink{unit__system_8cpp_a69bbad74fc2fc1671653bbe01ec6a473}{00084}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__system_8cpp_a69bbad74fc2fc1671653bbe01ec6a473}{unit\_system\_setName}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00085}00085     cout << \textcolor{stringliteral}{"{}TEST 6 -\/ System class's setName() method"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00086}00086     }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00087}00087     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* system = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Test System"{}}, 10.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00088}00088     system-\/>\mbox{\hyperlink{class_system_interface_a280dc88085364df4cd8d36d50c6f18c5}{setName}}(\textcolor{stringliteral}{"{}Altered Name"{}});}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00090}00090     \textcolor{comment}{// Making assertion to verify if the data of the name property has been altered.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00091}00091     assert(system-\/>\mbox{\hyperlink{class_system_interface_a32455d8e52d0541cd87bbeb6fe9a24f7}{getName}}() == \textcolor{stringliteral}{"{}Altered Name"{}});}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00093}00093     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00094}00094 \}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00096}00096 \textcolor{comment}{// Function for System class' method getValue() unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00097}\mbox{\hyperlink{unit__system_8cpp_a46c381288b5f123453e6bdaa8a99ea05}{00097}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__system_8cpp_a46c381288b5f123453e6bdaa8a99ea05}{unit\_system\_getValue}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00098}00098     cout << \textcolor{stringliteral}{"{}TEST 7 -\/ System class's getValue() method"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00100}00100     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* system = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Test System"{}}, 10.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00102}00102     \textcolor{comment}{// Making assertion to verify if the method returns the System class value and if it's}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00103}00103     \textcolor{comment}{// equal to the parameter previously passed.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00104}00104     assert(system-\/>\mbox{\hyperlink{class_system_interface_a7d6436985e98f048b28c3fb2136a56a0}{getValue}}() == 10.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00106}00106     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00107}00107 \}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00109}00109 \textcolor{comment}{// Function for System class' method setValue() unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00110}\mbox{\hyperlink{unit__system_8cpp_a08538941958c4fa464c0fff25554df1c}{00110}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__system_8cpp_a08538941958c4fa464c0fff25554df1c}{unit\_system\_setValue}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00111}00111     cout << \textcolor{stringliteral}{"{}TEST 8 -\/ System class's setValue() method"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00112}00112 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00113}00113     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* system = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Test System"{}}, 10.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00114}00114     system-\/>\mbox{\hyperlink{class_system_interface_afa9170b75f60d1dd4ed22462466870d3}{setValue}}(20.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00115}00115     }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00116}00116     \textcolor{comment}{// Making assertion to verify if the data of the value property has been altered.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00117}00117     assert(system-\/>\mbox{\hyperlink{class_system_interface_a7d6436985e98f048b28c3fb2136a56a0}{getValue}}() == 20.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00118}00118 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00119}00119     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00120}00120 \}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00121}00121 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00122}00122 \textcolor{comment}{// Function for System class' assingment operator unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00123}\mbox{\hyperlink{class_unit_system_a8e1f7d1bf946a189047ee5a34a7827dd}{00123}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_unit_system_a8e1f7d1bf946a189047ee5a34a7827dd}{UnitSystem::unit\_system\_assingmentOperator}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00124}00124     cout << \textcolor{stringliteral}{"{}TEST 9 -\/ System class assignment operator"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00125}00125     }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00126}00126     \mbox{\hyperlink{class_system}{System}}* system1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Test System"{}}, 10.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00127}00127     \mbox{\hyperlink{class_system}{System}}* system2 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}();}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00128}00128     *system2 = *system1;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00129}00129 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00130}00130     system1-\/>\mbox{\hyperlink{class_system_a26cbee8054a1973f77380dd6d9f28379}{setName}}(\textcolor{stringliteral}{"{}Original Test System"{}});}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00131}00131     system1-\/>\mbox{\hyperlink{class_system_a931178516c532c6e0f3f51d0dc5654fc}{setValue}}(100.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00132}00132 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00133}00133     \textcolor{comment}{// Making assertion to verify if the name property was assigned.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00134}00134     assert(system2-\/>\mbox{\hyperlink{class_system_a47ece132a04247cd74aea11537830bd4}{getName}}() == \textcolor{stringliteral}{"{}Test System"{}});}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00135}00135     \textcolor{comment}{// Making assertion to verify if the value property was assigned.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00136}00136     assert(system2-\/>\mbox{\hyperlink{class_system_aa7d17369d1034e7d8643a63f69d1901d}{getValue}}() == 10.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00137}00137 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00138}00138     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00139}00139 \}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00140}00140 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00141}00141 \textcolor{comment}{// Function for System class' "{}+"{} operator unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00142}\mbox{\hyperlink{unit__system_8cpp_a0e23bea36bce44831cb74c5780b21da8}{00142}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__system_8cpp_a0e23bea36bce44831cb74c5780b21da8}{unit\_system\_sumOperator}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00143}00143     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* sys1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Population 1"{}}, 100.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00144}00144     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* sys2 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Population 2"{}}, 10.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00145}00145 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00146}00146     cout << \textcolor{stringliteral}{"{}TEST 10 -\/ System class sum operator"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00147}00147     assert(((*sys1) + (*sys2)) == 110);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00148}00148     assert(((*sys1) + 20.0) == 120);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00149}00149 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00150}00150     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00151}00151 \}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00152}00152 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00153}00153 \textcolor{comment}{// Function for System class' "{}-\/"{} operator unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00154}\mbox{\hyperlink{unit__system_8cpp_a133aad7117536ba297d7864bb8375279}{00154}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__system_8cpp_a133aad7117536ba297d7864bb8375279}{unit\_system\_minusOperator}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00155}00155     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* sys1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Population 1"{}}, 100.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00156}00156     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* sys2 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Population 2"{}}, 10.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00157}00157 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00158}00158     cout << \textcolor{stringliteral}{"{}TEST 11 -\/ System class subtraction operator"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00159}00159     assert(((*sys1) -\/ (*sys2)) == 90);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00160}00160     assert(((*sys1) -\/ 20.0) == 80);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00161}00161 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00162}00162     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00163}00163 \}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00164}00164 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00165}00165 \textcolor{comment}{// Function for System class' "{}*"{} operator unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00166}\mbox{\hyperlink{unit__system_8cpp_a0984d13a65e0f5565c714bb14d2acbff}{00166}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__system_8cpp_a0984d13a65e0f5565c714bb14d2acbff}{unit\_system\_timesOperator}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00167}00167     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* sys1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Population 1"{}}, 100.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00168}00168     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* sys2 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Population 2"{}}, 10.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00169}00169 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00170}00170     cout << \textcolor{stringliteral}{"{}TEST 12 -\/ System class multiplication operator"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00171}00171     assert(((*sys1) * (*sys2)) == 1000);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00172}00172     assert(((*sys1) * 20.0) == 2000);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00173}00173 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00174}00174     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00175}00175 \}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00176}00176 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00177}00177 \textcolor{comment}{// Function for System class' "{}/"{} operator unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00178}\mbox{\hyperlink{unit__system_8cpp_aba2b53be9d2c3cb8c1cc11d84457f718}{00178}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__system_8cpp_aba2b53be9d2c3cb8c1cc11d84457f718}{unit\_system\_divisionOperator}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00179}00179     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* sys1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Population 1"{}}, 100.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00180}00180     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* sys2 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Population 2"{}}, 10.0);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00181}00181 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00182}00182     cout << \textcolor{stringliteral}{"{}TEST 13 -\/ System class division operator"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00183}00183     assert(((*sys1) / (*sys2)) == 10);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00184}00184     assert(((*sys1) / 20.0) == 5);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00185}00185 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00186}00186     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00187}00187 \}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00188}00188 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00189}00189 \textcolor{comment}{// Function to run all the System class' unit tests.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00190}\mbox{\hyperlink{unit__system_8cpp_afb68191bc1be68b04485884a3922d84f}{00190}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__system_8cpp_afb68191bc1be68b04485884a3922d84f}{run\_unit\_tests\_system}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00191}00191 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00192}00192     \mbox{\hyperlink{class_unit_system}{UnitSystem}}* unit\_sys = \textcolor{keyword}{new} \mbox{\hyperlink{class_unit_system}{UnitSystem}}();}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00193}00193 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00194}00194     \textcolor{comment}{// Calling all the System class' unit test functions.}}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00195}00195     \mbox{\hyperlink{unit__system_8cpp_a9b6fbdfa7c98ba246778d8ecb21b90fd}{unit\_system\_constructor}}();}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00196}00196     unit\_sys-\/>\mbox{\hyperlink{class_unit_system_af3f0868ef4c36d676b88ad58ca587a88}{unit\_system\_copy\_constructor}}();}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00197}00197     \mbox{\hyperlink{unit__system_8cpp_ab4642eeb7c23bfc4315517cc70fb3b3e}{unit\_system\_destructor}}();}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00198}00198     \mbox{\hyperlink{unit__system_8cpp_ac9d051065c245fd414c6db3318a59fdd}{unit\_system\_getName}}();}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00199}00199     \mbox{\hyperlink{unit__system_8cpp_a69bbad74fc2fc1671653bbe01ec6a473}{unit\_system\_setName}}();}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00200}00200     \mbox{\hyperlink{unit__system_8cpp_a46c381288b5f123453e6bdaa8a99ea05}{unit\_system\_getValue}}();}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00201}00201     \mbox{\hyperlink{unit__system_8cpp_a08538941958c4fa464c0fff25554df1c}{unit\_system\_setValue}}();}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00202}00202     unit\_sys-\/>\mbox{\hyperlink{class_unit_system_a8e1f7d1bf946a189047ee5a34a7827dd}{unit\_system\_assingmentOperator}}();}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00203}00203     \mbox{\hyperlink{unit__system_8cpp_a0e23bea36bce44831cb74c5780b21da8}{unit\_system\_sumOperator}}();}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00204}00204     \mbox{\hyperlink{unit__system_8cpp_a133aad7117536ba297d7864bb8375279}{unit\_system\_minusOperator}}();}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00205}00205     \mbox{\hyperlink{unit__system_8cpp_a0984d13a65e0f5565c714bb14d2acbff}{unit\_system\_timesOperator}}();}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00206}00206     \mbox{\hyperlink{unit__system_8cpp_aba2b53be9d2c3cb8c1cc11d84457f718}{unit\_system\_divisionOperator}}();}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00207}00207 }
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00208}00208     \textcolor{keyword}{delete}(unit\_sys);}
+\DoxyCodeLine{\Hypertarget{unit__system_8cpp_source_l00209}00209 \}}
+
+\end{DoxyCode}

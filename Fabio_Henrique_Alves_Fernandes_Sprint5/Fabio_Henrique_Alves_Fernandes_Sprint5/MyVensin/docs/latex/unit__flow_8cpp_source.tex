@@ -1,0 +1,249 @@
+\hypertarget{unit__flow_8cpp_source}{}\doxysection{unit\+\_\+flow.\+cpp}
+\label{unit__flow_8cpp_source}\index{test/unit/unit\_flow.cpp@{test/unit/unit\_flow.cpp}}
+\mbox{\hyperlink{unit__flow_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{unit__flow_8h}{unit\_flow.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include <assert.h>}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00004}00004 \textcolor{comment}{// Function for flow's constructor unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00005}\mbox{\hyperlink{unit__flow_8cpp_a4965358b9c104dc75cf98a59e781bde9}{00005}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__flow_8cpp_a4965358b9c104dc75cf98a59e781bde9}{unit\_flow\_constructor}}() \{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00006}00006     cout << \textcolor{stringliteral}{"{}TEST 1 -\/ Default constructor of the Flow class without passing parameters"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00008}00008     \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}* flow1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00009}00009     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00010}00010     \textcolor{comment}{// Making assertion to verify if the name property was initialized with the default data.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00011}00011     assert(flow1-\/>\mbox{\hyperlink{class_flow_a62bbc54ff95eeb0795511519edf32077}{getName}}() == \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00012}00012     \textcolor{comment}{// Making assertion to verify if there isn't a source system in this flow.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00013}00013     assert(flow1-\/>\mbox{\hyperlink{class_flow_aef65a479d2ac834dd5224a30d977ff8e}{getSource}}() == NULL);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00014}00014     \textcolor{comment}{// Making assertion to verify if there isn't a target system in this flow.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00015}00015     assert(flow1-\/>\mbox{\hyperlink{class_flow_ab946f996e57861c604bb6f12b7228a0b}{getTarget}}() == NULL);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00017}00017     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00018}00018 \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00020}00020 \textcolor{comment}{// Function for Flow class's copy constructor unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00021}\mbox{\hyperlink{class_unit_flow_a63951bd806985d20afee08a29f70ab15}{00021}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_unit_flow_a63951bd806985d20afee08a29f70ab15}{UnitFlow::unit\_flow\_copy\_constructor}}() \{ }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00022}00022     cout << \textcolor{stringliteral}{"{}TEST 2 -\/ Copy constructor of the Flow class"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00024}00024     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* sys1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Sys 1"{}}, 5.0);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00025}00025     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* sys2 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Sys 2"{}}, 6.0);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00027}00027     \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}* flow1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}(\textcolor{stringliteral}{"{}Flow 1"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00028}00028     \mbox{\hyperlink{class_flow}{Flow}}* flow2 = \textcolor{keyword}{new} \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}(*flow1); }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00030}00030     flow1-\/>\mbox{\hyperlink{class_flow_a6d7aa9221de09c4f8bb507365e284e5a}{setName}}(\textcolor{stringliteral}{"{}Original Flow 1"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00031}00031     flow1-\/>\mbox{\hyperlink{class_flow_ac227f0842585a4fd7a3a41acdc95c793}{setSource}}(sys1);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00032}00032     flow1-\/>\mbox{\hyperlink{class_flow_a8c3f04a3824ead3a6aedffc462d8dee4}{setTarget}}(sys2);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00033}00033     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00034}00034     \textcolor{comment}{// Making assertion to verify if the name property was copied.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00035}00035     assert(flow2-\/>\mbox{\hyperlink{class_flow_a62bbc54ff95eeb0795511519edf32077}{getName}}() == \textcolor{stringliteral}{"{}Flow 1"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00036}00036     \textcolor{comment}{// Making assertion to verify if there isn't a source system in this flow.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00037}00037     assert(flow2-\/>\mbox{\hyperlink{class_flow_aef65a479d2ac834dd5224a30d977ff8e}{getSource}}() == NULL); }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00038}00038     \textcolor{comment}{// Making assertion to verify if there isn't a target system in this flow.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00039}00039     assert(flow2-\/>\mbox{\hyperlink{class_flow_ab946f996e57861c604bb6f12b7228a0b}{getTarget}}() == NULL);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00041}00041     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00042}00042 \} }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00044}00044 \textcolor{comment}{// Function for the Flow class' destructor unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00045}\mbox{\hyperlink{unit__flow_8cpp_aa9c5113c9769271d9810118a247bca01}{00045}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__flow_8cpp_aa9c5113c9769271d9810118a247bca01}{unit\_flow\_destructor}}() \{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00046}00046     cout << \textcolor{stringliteral}{"{}TEST 3 -\/ Default destructor of the Flow class"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00048}00048     \textcolor{keywordtype}{double} vmBefore, vmAfter, rss;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00050}00050     \textcolor{comment}{// Getting the memory usage previous to the creation of a flow.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00051}00051     \mbox{\hyperlink{mem__usage_8cpp_abf350b8cfb93f01b72106eddd2913989}{memory\_usage}}(vmBefore, rss);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00052}00052   }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00053}00053     \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}* flow = \textcolor{keyword}{new} \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}(\textcolor{stringliteral}{"{}Flow"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00054}00054     \textcolor{keyword}{delete}(flow);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00056}00056     \textcolor{comment}{// Getting the memory usage after the creation and destruction of a Flow object.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00057}00057     \mbox{\hyperlink{mem__usage_8cpp_abf350b8cfb93f01b72106eddd2913989}{memory\_usage}}(vmAfter, rss);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00059}00059     \textcolor{comment}{// Making assertion to verify if the memory usage after the creation and deletion}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00060}00060     \textcolor{comment}{// is the same as before the creation of Flow object.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00061}00061     assert(vmBefore == vmAfter);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00063}00063     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00064}00064 \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00066}00066 \textcolor{comment}{// Function for Flow class' method getName() unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00067}\mbox{\hyperlink{unit__flow_8cpp_af37796551d03a5257f210abe20cdd818}{00067}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__flow_8cpp_af37796551d03a5257f210abe20cdd818}{unit\_flow\_getName}}() \{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00068}00068     cout << \textcolor{stringliteral}{"{}TEST 4 -\/ Flow class' getName() method"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00069}00069     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00070}00070     \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}* flow = \textcolor{keyword}{new} \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}(\textcolor{stringliteral}{"{}Flow 1"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00072}00072     \textcolor{comment}{// Making assertion to verify if the method returns the Flow class name and if it's}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00073}00073     \textcolor{comment}{// equal to the parameter previously passed. }}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00074}00074     assert(flow-\/>\mbox{\hyperlink{class_flow_a62bbc54ff95eeb0795511519edf32077}{getName}}() == \textcolor{stringliteral}{"{}Flow 1"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00075}00075     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00076}00076     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00077}00077 \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00079}00079 \textcolor{comment}{// Function for Flow class' method setName() unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00080}\mbox{\hyperlink{unit__flow_8cpp_aed589f1c9c5ec42aecf5b20b811bacfe}{00080}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__flow_8cpp_aed589f1c9c5ec42aecf5b20b811bacfe}{unit\_flow\_setName}}() \{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00081}00081     cout << \textcolor{stringliteral}{"{}TEST 5 -\/ Flow class' setName() method"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00083}00083     \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}* flow = \textcolor{keyword}{new} \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00084}00084     flow-\/>\mbox{\hyperlink{class_flow_a6d7aa9221de09c4f8bb507365e284e5a}{setName}}(\textcolor{stringliteral}{"{}Test Flow"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00086}00086     \textcolor{comment}{// Making assertion to verify if the data of the name property has been altered.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00087}00087     assert(flow-\/>\mbox{\hyperlink{class_flow_a62bbc54ff95eeb0795511519edf32077}{getName}}() == \textcolor{stringliteral}{"{}Test Flow"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00089}00089     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00090}00090 \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00091}00091 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00092}00092 \textcolor{comment}{// Function for Flow class' method getSource() unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00093}\mbox{\hyperlink{unit__flow_8cpp_aa9b5d1d6a9b5aadc2083f100b0c6596a}{00093}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__flow_8cpp_aa9b5d1d6a9b5aadc2083f100b0c6596a}{unit\_flow\_getSource}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00094}00094     cout << \textcolor{stringliteral}{"{}TEST 6 -\/ Flow class' getSource() method"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00095}00095     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00096}00096     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* system = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Test System"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00097}00097     \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}* flow = \textcolor{keyword}{new} \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}(\textcolor{stringliteral}{"{}Flow 1"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00098}00098     flow-\/>\mbox{\hyperlink{class_flow_ac227f0842585a4fd7a3a41acdc95c793}{setSource}}(system);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00100}00100     \textcolor{comment}{// Making assertion to verify if the method returns the Flow class source system and if it's}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00101}00101     \textcolor{comment}{// equal to the parameter previously passed. }}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00102}00102     assert(flow-\/>\mbox{\hyperlink{class_flow_aef65a479d2ac834dd5224a30d977ff8e}{getSource}}()-\/>\mbox{\hyperlink{class_system_interface_a32455d8e52d0541cd87bbeb6fe9a24f7}{getName}}() == \textcolor{stringliteral}{"{}Test System"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00103}00103     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00104}00104     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;  }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00105}00105 \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00107}00107 \textcolor{comment}{// Function for Flow class' method setSource() unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00108}\mbox{\hyperlink{unit__flow_8cpp_a6c839e92f50b2fc37595ac2f21808dbb}{00108}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__flow_8cpp_a6c839e92f50b2fc37595ac2f21808dbb}{unit\_flow\_setSource}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00109}00109     cout << \textcolor{stringliteral}{"{}TEST 7 -\/ Flow class' setSource() method"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00110}00110     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00111}00111     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* system = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Test System"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00112}00112     \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}* flow1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}(\textcolor{stringliteral}{"{}Flow 1"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00113}00113     flow1-\/>\mbox{\hyperlink{class_flow_ac227f0842585a4fd7a3a41acdc95c793}{setSource}}(system);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00114}00114 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00115}00115     \textcolor{comment}{// Making assertion to verify if the data of the source system property has been altered.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00116}00116     assert(flow1-\/>\mbox{\hyperlink{class_flow_aef65a479d2ac834dd5224a30d977ff8e}{getSource}}()-\/>\mbox{\hyperlink{class_system_interface_a32455d8e52d0541cd87bbeb6fe9a24f7}{getName}}() == \textcolor{stringliteral}{"{}Test System"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00117}00117     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00118}00118     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;  }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00119}00119 \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00121}00121 \textcolor{comment}{// Function for Flow class' method clearSource() unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00122}\mbox{\hyperlink{unit__flow_8cpp_a98d897e2f786b7b38017ff90404c5feb}{00122}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__flow_8cpp_a98d897e2f786b7b38017ff90404c5feb}{unit\_flow\_clearSource}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00123}00123     cout << \textcolor{stringliteral}{"{}TEST 8 -\/ Flow class' clearSource() method"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00124}00124     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00125}00125     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* system = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Test System"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00126}00126     \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}* flow1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}(\textcolor{stringliteral}{"{}Flow 1"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00127}00127     flow1-\/>\mbox{\hyperlink{class_flow_ac227f0842585a4fd7a3a41acdc95c793}{setSource}}(system);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00128}00128     flow1-\/>\mbox{\hyperlink{class_flow_af262728866a280fef6b60e26257a6d6f}{clearSource}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00129}00129 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00130}00130     \textcolor{comment}{// Making assertion to verify if the data of the source system property has been altered.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00131}00131     assert(flow1-\/>\mbox{\hyperlink{class_flow_aef65a479d2ac834dd5224a30d977ff8e}{getSource}}() == NULL);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00132}00132     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00133}00133     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;  }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00134}00134 \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00135}00135 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00136}00136 \textcolor{comment}{// Function for Flow class' method getTarget() unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00137}\mbox{\hyperlink{unit__flow_8cpp_a73ff889bc183b97d79a4c207b9dd88f7}{00137}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__flow_8cpp_a73ff889bc183b97d79a4c207b9dd88f7}{unit\_flow\_getTarget}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00138}00138     cout << \textcolor{stringliteral}{"{}TEST 9 -\/ Flow class' getTarget() method"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00139}00139     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00140}00140     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* system = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Test System"{}}); }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00141}00141     \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}* flow = \textcolor{keyword}{new} \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}(\textcolor{stringliteral}{"{}Flow 1"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00142}00142     flow-\/>\mbox{\hyperlink{class_flow_a8c3f04a3824ead3a6aedffc462d8dee4}{setTarget}}(system);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00143}00143 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00144}00144     \textcolor{comment}{// Making assertion to verify if the method returns the Flow class target system and if it's}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00145}00145     \textcolor{comment}{// equal to the parameter previously passed. }}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00146}00146     assert(flow-\/>\mbox{\hyperlink{class_flow_ab946f996e57861c604bb6f12b7228a0b}{getTarget}}()-\/>\mbox{\hyperlink{class_system_interface_a32455d8e52d0541cd87bbeb6fe9a24f7}{getName}}() == \textcolor{stringliteral}{"{}Test System"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00147}00147     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00148}00148     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00149}00149 \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00150}00150 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00151}00151 \textcolor{comment}{// Function for Flow class' method setTarget() unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00152}\mbox{\hyperlink{unit__flow_8cpp_a8aa7bc33d472e8a01a0a33d7dcd328d8}{00152}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__flow_8cpp_a8aa7bc33d472e8a01a0a33d7dcd328d8}{unit\_flow\_setTarget}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00153}00153     cout << \textcolor{stringliteral}{"{}TEST 10 -\/ Flow class' setTarget() method"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00154}00154     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00155}00155     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* system = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Test System"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00156}00156     \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}* flow = \textcolor{keyword}{new} \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}(\textcolor{stringliteral}{"{}Flow 1"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00157}00157     flow-\/>\mbox{\hyperlink{class_flow_a8c3f04a3824ead3a6aedffc462d8dee4}{setTarget}}(system);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00158}00158 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00159}00159     \textcolor{comment}{// Making assertion to verify if the data of the target system property has been altered.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00160}00160     assert(flow-\/>\mbox{\hyperlink{class_flow_ab946f996e57861c604bb6f12b7228a0b}{getTarget}}()-\/>\mbox{\hyperlink{class_system_interface_a32455d8e52d0541cd87bbeb6fe9a24f7}{getName}}() == \textcolor{stringliteral}{"{}Test System"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00161}00161     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00162}00162     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00163}00163 \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00164}00164 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00165}00165 \textcolor{comment}{// Function for Flow class' method clearTarget() unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00166}\mbox{\hyperlink{unit__flow_8cpp_a28a40d8b0c85b11e45ea124630d9c881}{00166}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__flow_8cpp_a28a40d8b0c85b11e45ea124630d9c881}{unit\_flow\_clearTarget}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00167}00167     cout << \textcolor{stringliteral}{"{}TEST 11 -\/ Flow class' clearTarget() method"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00168}00168     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00169}00169     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* system = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Test System"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00170}00170     \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}* flow = \textcolor{keyword}{new} \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}(\textcolor{stringliteral}{"{}Flow"{}}); }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00171}00171     flow-\/>\mbox{\hyperlink{class_flow_a8c3f04a3824ead3a6aedffc462d8dee4}{setTarget}}(system);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00172}00172     flow-\/>\mbox{\hyperlink{class_flow_a2d1ef837436f4982de52096c2b802e4e}{clearTarget}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00173}00173 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00174}00174     \textcolor{comment}{// Making assertion to verify if the data of the target system property has been altered.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00175}00175     assert(flow-\/>\mbox{\hyperlink{class_flow_ab946f996e57861c604bb6f12b7228a0b}{getTarget}}() == NULL);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00176}00176     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00177}00177     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;  }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00178}00178 \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00179}00179 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00180}00180 \textcolor{comment}{// Function for Flow class' assingment operator unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00181}\mbox{\hyperlink{class_unit_flow_a4352ea66699a72da26e983d37a74c368}{00181}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_unit_flow_a4352ea66699a72da26e983d37a74c368}{UnitFlow::unit\_flow\_assingmentOperator}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00182}00182     cout << \textcolor{stringliteral}{"{}TEST 12 -\/ Flow class' assignment operator"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00183}00183     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00184}00184     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* sys1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Sys 1"{}}, 5.0);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00185}00185     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* sys2 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Sys 2"{}}, 6.0);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00186}00186 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00187}00187     \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}* flow1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}(\textcolor{stringliteral}{"{}Flow 1"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00188}00188     \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}* flow2 = \textcolor{keyword}{new} \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00189}00189     *flow2 = *flow1;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00190}00190     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00191}00191     flow1-\/>\mbox{\hyperlink{class_flow_a6d7aa9221de09c4f8bb507365e284e5a}{setName}}(\textcolor{stringliteral}{"{}Original Flow 1"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00192}00192     flow1-\/>\mbox{\hyperlink{class_flow_ac227f0842585a4fd7a3a41acdc95c793}{setSource}}(sys1);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00193}00193     flow1-\/>\mbox{\hyperlink{class_flow_a8c3f04a3824ead3a6aedffc462d8dee4}{setTarget}}(sys2);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00194}00194         }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00195}00195     \textcolor{comment}{// Making assertion to verify if the name property was assigned.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00196}00196     assert(flow2-\/>\mbox{\hyperlink{class_flow_a62bbc54ff95eeb0795511519edf32077}{getName}}() == \textcolor{stringliteral}{"{}Flow 1"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00197}00197     \textcolor{comment}{// Making assertion to verify if the source system property was assigned.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00198}00198     assert(flow2-\/>\mbox{\hyperlink{class_flow_aef65a479d2ac834dd5224a30d977ff8e}{getSource}}() == NULL);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00199}00199     \textcolor{comment}{// Making assertion to verify if the target system property was assigned.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00200}00200     assert(flow2-\/>\mbox{\hyperlink{class_flow_ab946f996e57861c604bb6f12b7228a0b}{getTarget}}() == NULL);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00201}00201     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00202}00202     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00203}00203 \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00204}00204 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00205}00205 \textcolor{comment}{// Function for Flow class' execute method unit test.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00206}\mbox{\hyperlink{unit__flow_8cpp_ae45024c61711826abda94b5c9591edc7}{00206}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__flow_8cpp_ae45024c61711826abda94b5c9591edc7}{unit\_flow\_execute}}()\{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00207}00207     cout << \textcolor{stringliteral}{"{}TEST 13 -\/ Flow class' execute() method"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00208}00208     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00209}00209     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* system1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Test System 1"{}}, 10.0);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00210}00210     \mbox{\hyperlink{class_system_interface}{SystemInterface}}* system2 = \textcolor{keyword}{new} \mbox{\hyperlink{class_system}{System}}(\textcolor{stringliteral}{"{}Test System 2"{}}, 0.0);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00211}00211     \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}* flow = \textcolor{keyword}{new} \mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}}(\textcolor{stringliteral}{"{}Flow"{}});}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00212}00212     flow-\/>\mbox{\hyperlink{class_flow_ac227f0842585a4fd7a3a41acdc95c793}{setSource}}(system1);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00213}00213     flow-\/>\mbox{\hyperlink{class_flow_a8c3f04a3824ead3a6aedffc462d8dee4}{setTarget}}(system2);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00214}00214     system2-\/>\mbox{\hyperlink{class_system_interface_afa9170b75f60d1dd4ed22462466870d3}{setValue}}(flow-\/>\mbox{\hyperlink{class_exponencial_flow_a3f5d88df645307180879a88501b64863}{execute}}());}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00215}00215     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00216}00216     \textcolor{comment}{// Making assertion to verify if the execute method has been completed successfully.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00217}00217     assert(abs(flow-\/>\mbox{\hyperlink{class_flow_ab946f996e57861c604bb6f12b7228a0b}{getTarget}}()-\/>\mbox{\hyperlink{class_system_interface_a7d6436985e98f048b28c3fb2136a56a0}{getValue}}() -\/ 0.1) < 0.01);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00218}00218     }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00219}00219     cout << \mbox{\hyperlink{unit__flow_8h_acfbc006ea433ad708fdee3e82996e721}{GREEN}} << \textcolor{stringliteral}{"{}OK!"{}} << \mbox{\hyperlink{unit__flow_8h_ab702106cf3b3e96750b6845ded4e0299}{RESET}} << endl;}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00220}00220 \}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00221}00221 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00222}00222 \textcolor{comment}{// Function to run all the Flow class' unit tests.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00223}\mbox{\hyperlink{unit__flow_8cpp_a44d8a3170a3ac12683feef3d4bcd3554}{00223}} \textcolor{keywordtype}{void} \mbox{\hyperlink{unit__flow_8cpp_a44d8a3170a3ac12683feef3d4bcd3554}{run\_unit\_tests\_flow}}() \{}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00224}00224 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00225}00225     \mbox{\hyperlink{class_unit_flow}{UnitFlow}}* unit\_flow = \textcolor{keyword}{new} \mbox{\hyperlink{class_unit_flow}{UnitFlow}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00226}00226 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00227}00227     \textcolor{comment}{// Calling all the Flow class' unit test functions.}}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00228}00228     \mbox{\hyperlink{unit__flow_8cpp_a4965358b9c104dc75cf98a59e781bde9}{unit\_flow\_constructor}}();  }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00229}00229     unit\_flow-\/>\mbox{\hyperlink{class_unit_flow_a63951bd806985d20afee08a29f70ab15}{unit\_flow\_copy\_constructor}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00230}00230     \mbox{\hyperlink{unit__flow_8cpp_aa9c5113c9769271d9810118a247bca01}{unit\_flow\_destructor}}(); }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00231}00231     \mbox{\hyperlink{unit__flow_8cpp_af37796551d03a5257f210abe20cdd818}{unit\_flow\_getName}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00232}00232     \mbox{\hyperlink{unit__flow_8cpp_aed589f1c9c5ec42aecf5b20b811bacfe}{unit\_flow\_setName}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00233}00233     \mbox{\hyperlink{unit__flow_8cpp_aa9b5d1d6a9b5aadc2083f100b0c6596a}{unit\_flow\_getSource}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00234}00234     \mbox{\hyperlink{unit__flow_8cpp_a6c839e92f50b2fc37595ac2f21808dbb}{unit\_flow\_setSource}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00235}00235     \mbox{\hyperlink{unit__flow_8cpp_a98d897e2f786b7b38017ff90404c5feb}{unit\_flow\_clearSource}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00236}00236     \mbox{\hyperlink{unit__flow_8cpp_a73ff889bc183b97d79a4c207b9dd88f7}{unit\_flow\_getTarget}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00237}00237     \mbox{\hyperlink{unit__flow_8cpp_a8aa7bc33d472e8a01a0a33d7dcd328d8}{unit\_flow\_setTarget}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00238}00238     \mbox{\hyperlink{unit__flow_8cpp_a28a40d8b0c85b11e45ea124630d9c881}{unit\_flow\_clearTarget}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00239}00239     unit\_flow-\/>\mbox{\hyperlink{class_unit_flow_a4352ea66699a72da26e983d37a74c368}{unit\_flow\_assingmentOperator}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00240}00240     \mbox{\hyperlink{unit__flow_8cpp_ae45024c61711826abda94b5c9591edc7}{unit\_flow\_execute}}();}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00241}00241 }
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00242}00242     \textcolor{keyword}{delete}(unit\_flow);}
+\DoxyCodeLine{\Hypertarget{unit__flow_8cpp_source_l00243}00243 \}}
+
+\end{DoxyCode}

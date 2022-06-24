@@ -1,0 +1,403 @@
+\hypertarget{class_system}{}\doxysection{System Class Reference}
+\label{class_system}\index{System@{System}}
+
+
+Class \mbox{\hyperlink{class_system}{System}}.  
+
+
+
+
+{\ttfamily \#include $<$system.\+h$>$}
+
+
+
+Inheritance diagram for System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{class_system__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{class_system__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_system_a9dd6c24612a98e55eaf1ec971bc44f4a}{System}} (const \mbox{\hyperlink{class_system}{System}} \&sys)
+\item 
+\mbox{\hyperlink{class_system_ab21ca17f65ab1ff3db3b284e2526c521}{System}} (string \mbox{\hyperlink{class_system_a29fe2868c0d56fdebc67f1bef5d5cca3}{name}}=\char`\"{}\char`\"{}, double \mbox{\hyperlink{class_system_a879687b1125ef20757c2a61345fedd00}{value}}=0)
+\item 
+virtual \mbox{\hyperlink{class_system_a3be70bb338e3f062f821173fd15680d0}{$\sim$\+System}} ()
+\item 
+void \mbox{\hyperlink{class_system_a26cbee8054a1973f77380dd6d9f28379}{set\+Name}} (string sys\+Name)
+\item 
+void \mbox{\hyperlink{class_system_a931178516c532c6e0f3f51d0dc5654fc}{set\+Value}} (double sys\+Value)
+\item 
+string \mbox{\hyperlink{class_system_a47ece132a04247cd74aea11537830bd4}{get\+Name}} () const
+\item 
+double \mbox{\hyperlink{class_system_aa7d17369d1034e7d8643a63f69d1901d}{get\+Value}} () const
+\item 
+double \mbox{\hyperlink{class_system_a82c8692e3657e597148f1d97818e522b}{operator+}} (const \mbox{\hyperlink{class_system_interface}{System\+Interface}} \&sys)
+\item 
+double \mbox{\hyperlink{class_system_aaceb6f53abba30478a743aa20ca0a525}{operator+}} (const double \&value\+Sys)
+\item 
+double \mbox{\hyperlink{class_system_a2895b024e5dc802673636964b3db577a}{operator-\/}} (const \mbox{\hyperlink{class_system_interface}{System\+Interface}} \&sys)
+\item 
+double \mbox{\hyperlink{class_system_a6754b617d92ff06e7547b274e059ecb1}{operator-\/}} (const double \&value\+Sys)
+\item 
+double \mbox{\hyperlink{class_system_a1395588ad506671bbe0d4b0fff0a7b6d}{operator$\ast$}} (const \mbox{\hyperlink{class_system_interface}{System\+Interface}} \&sys)
+\item 
+double \mbox{\hyperlink{class_system_a6bd3086e3968cc5e4857b5898c8efbb2}{operator$\ast$}} (const double \&value\+Sys)
+\item 
+double \mbox{\hyperlink{class_system_aa1c55edbcd9b9279b01f416d1e987346}{operator/}} (const \mbox{\hyperlink{class_system_interface}{System\+Interface}} \&sys)
+\item 
+double \mbox{\hyperlink{class_system_aaa6e2b6fcab655235d9d2c2f886513c7}{operator/}} (const double \&value\+Sys)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_system}{System}} \& \mbox{\hyperlink{class_system_a9baec86de531db675fe23edaa74d6e4a}{operator=}} (const \mbox{\hyperlink{class_system}{System}} \&sys)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_system_a29fe2868c0d56fdebc67f1bef5d5cca3}{name}}
+\item 
+double \mbox{\hyperlink{class_system_a879687b1125ef20757c2a61345fedd00}{value}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_system_a4f3bf5ddad62048a5ba0f424952c3e35}{Flow}}
+\item 
+class \mbox{\hyperlink{class_system_a2bf2a0e9b454c55aa5dcb5aa4698697b}{Model}}
+\item 
+class \mbox{\hyperlink{class_system_a6682d04f47a9097422c08f54782ffaab}{Unit\+System}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{class_system}{System}}. 
+
+This Class represents a \mbox{\hyperlink{class_system}{System}} in the General Systems Theory implemented in this code. 
+
+Definition at line \mbox{\hyperlink{system_8h_source_l00010}{10}} of file \mbox{\hyperlink{system_8h_source}{system.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_system_a9dd6c24612a98e55eaf1ec971bc44f4a}\label{class_system_a9dd6c24612a98e55eaf1ec971bc44f4a}} 
+\index{System@{System}!System@{System}}
+\index{System@{System}!System@{System}}
+\doxysubsubsection{\texorpdfstring{System()}{System()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily System\+::\+System (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system}{System}} \&}]{sys }\end{DoxyParamCaption})}
+
+This is the copy constructor for the \mbox{\hyperlink{class_system}{System}} Class. 
+\begin{DoxyParams}{Parameters}
+{\em sys} & the \mbox{\hyperlink{class_system}{System}} that is going to be cloned. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{system_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+\mbox{\Hypertarget{class_system_ab21ca17f65ab1ff3db3b284e2526c521}\label{class_system_ab21ca17f65ab1ff3db3b284e2526c521}} 
+\index{System@{System}!System@{System}}
+\index{System@{System}!System@{System}}
+\doxysubsubsection{\texorpdfstring{System()}{System()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily System\+::\+System (\begin{DoxyParamCaption}\item[{string}]{name = {\ttfamily \char`\"{}\char`\"{}},  }\item[{double}]{value = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+This is the default constructor for the \mbox{\hyperlink{class_system}{System}} Class. 
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the \mbox{\hyperlink{class_system}{System}}. \\
+\hline
+{\em value} & the initial value of the \mbox{\hyperlink{class_system}{System}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_system}{System}} -\/ a \mbox{\hyperlink{class_system}{System}} Class object. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{system_8cpp_source_l00018}{18}} of file \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+\mbox{\Hypertarget{class_system_a3be70bb338e3f062f821173fd15680d0}\label{class_system_a3be70bb338e3f062f821173fd15680d0}} 
+\index{System@{System}!````~System@{$\sim$System}}
+\index{````~System@{$\sim$System}!System@{System}}
+\doxysubsubsection{\texorpdfstring{$\sim$System()}{~System()}}
+{\footnotesize\ttfamily System\+::$\sim$\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This is the default destructor for the \mbox{\hyperlink{class_system}{System}} Class. 
+
+Definition at line \mbox{\hyperlink{system_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_system_a47ece132a04247cd74aea11537830bd4}\label{class_system_a47ece132a04247cd74aea11537830bd4}} 
+\index{System@{System}!getName@{getName}}
+\index{getName@{getName}!System@{System}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string System\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the name attribute in the \mbox{\hyperlink{class_system}{System}} Class. \begin{DoxyReturn}{Returns}
+string -\/ the content name attribute. ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_system_interface_a32455d8e52d0541cd87bbeb6fe9a24f7}{System\+Interface}}.
+
+
+
+Definition at line \mbox{\hyperlink{system_8cpp_source_l00032}{32}} of file \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+\mbox{\Hypertarget{class_system_aa7d17369d1034e7d8643a63f69d1901d}\label{class_system_aa7d17369d1034e7d8643a63f69d1901d}} 
+\index{System@{System}!getValue@{getValue}}
+\index{getValue@{getValue}!System@{System}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily double System\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the value attribute in the \mbox{\hyperlink{class_system}{System}} Class. \begin{DoxyReturn}{Returns}
+double -\/ the content value attribute. ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_system_interface_a7d6436985e98f048b28c3fb2136a56a0}{System\+Interface}}.
+
+
+
+Definition at line \mbox{\hyperlink{system_8cpp_source_l00036}{36}} of file \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+\mbox{\Hypertarget{class_system_a6bd3086e3968cc5e4857b5898c8efbb2}\label{class_system_a6bd3086e3968cc5e4857b5898c8efbb2}} 
+\index{System@{System}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double System\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const double \&}]{value\+Sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This is the overloaded \char`\"{}$\ast$\char`\"{} operator for the \mbox{\hyperlink{class_system}{System}} Class. 
+
+Implements \mbox{\hyperlink{class_system_interface_ab49822b5a2d0e38bd318f485615242f6}{System\+Interface}}.
+
+
+
+Definition at line \mbox{\hyperlink{system_8cpp_source_l00073}{73}} of file \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+\mbox{\Hypertarget{class_system_a1395588ad506671bbe0d4b0fff0a7b6d}\label{class_system_a1395588ad506671bbe0d4b0fff0a7b6d}} 
+\index{System@{System}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double System\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system_interface}{System\+Interface}} \&}]{sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This is the overloaded \char`\"{}$\ast$\char`\"{} operator for the \mbox{\hyperlink{class_system}{System}} Class. 
+
+Implements \mbox{\hyperlink{class_system_interface_a430a8fabbdba092f9b0719022a86f163}{System\+Interface}}.
+
+
+
+Definition at line \mbox{\hyperlink{system_8cpp_source_l00065}{65}} of file \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+\mbox{\Hypertarget{class_system_aaceb6f53abba30478a743aa20ca0a525}\label{class_system_aaceb6f53abba30478a743aa20ca0a525}} 
+\index{System@{System}!operator+@{operator+}}
+\index{operator+@{operator+}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double System\+::operator+ (\begin{DoxyParamCaption}\item[{const double \&}]{value\+Sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This is the overloaded \char`\"{}-\/\char`\"{} operator for the \mbox{\hyperlink{class_system}{System}} Class. 
+
+Implements \mbox{\hyperlink{class_system_interface_a9cd9f3686b6d3962475a346b3c099cb3}{System\+Interface}}.
+
+
+
+Definition at line \mbox{\hyperlink{system_8cpp_source_l00049}{49}} of file \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+\mbox{\Hypertarget{class_system_a82c8692e3657e597148f1d97818e522b}\label{class_system_a82c8692e3657e597148f1d97818e522b}} 
+\index{System@{System}!operator+@{operator+}}
+\index{operator+@{operator+}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double System\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system_interface}{System\+Interface}} \&}]{sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This is the overloaded \char`\"{}+\char`\"{} operator for the \mbox{\hyperlink{class_system}{System}} Class. 
+
+Implements \mbox{\hyperlink{class_system_interface_ad065bf1dd654dcf04252fd128fe4a855}{System\+Interface}}.
+
+
+
+Definition at line \mbox{\hyperlink{system_8cpp_source_l00041}{41}} of file \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+\mbox{\Hypertarget{class_system_a6754b617d92ff06e7547b274e059ecb1}\label{class_system_a6754b617d92ff06e7547b274e059ecb1}} 
+\index{System@{System}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double System\+::operator-\/ (\begin{DoxyParamCaption}\item[{const double \&}]{value\+Sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This is the overloaded \char`\"{}-\/\char`\"{} operator for the \mbox{\hyperlink{class_system}{System}} Class. 
+
+Implements \mbox{\hyperlink{class_system_interface_af010f50c923d0959e24b65eb97df3875}{System\+Interface}}.
+
+
+
+Definition at line \mbox{\hyperlink{system_8cpp_source_l00061}{61}} of file \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+\mbox{\Hypertarget{class_system_a2895b024e5dc802673636964b3db577a}\label{class_system_a2895b024e5dc802673636964b3db577a}} 
+\index{System@{System}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double System\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system_interface}{System\+Interface}} \&}]{sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This is the overloaded \char`\"{}-\/\char`\"{} operator for the \mbox{\hyperlink{class_system}{System}} Class. 
+
+Implements \mbox{\hyperlink{class_system_interface_a107d164a414427bd59639a38ca737ad6}{System\+Interface}}.
+
+
+
+Definition at line \mbox{\hyperlink{system_8cpp_source_l00053}{53}} of file \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+\mbox{\Hypertarget{class_system_aaa6e2b6fcab655235d9d2c2f886513c7}\label{class_system_aaa6e2b6fcab655235d9d2c2f886513c7}} 
+\index{System@{System}!operator/@{operator/}}
+\index{operator/@{operator/}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double System\+::operator/ (\begin{DoxyParamCaption}\item[{const double \&}]{value\+Sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This is the overloaded \char`\"{}/\char`\"{} operator for the \mbox{\hyperlink{class_system}{System}} Class. 
+
+Implements \mbox{\hyperlink{class_system_interface_a8d774b5c549e414e4b2ec224898df397}{System\+Interface}}.
+
+
+
+Definition at line \mbox{\hyperlink{system_8cpp_source_l00086}{86}} of file \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+\mbox{\Hypertarget{class_system_aa1c55edbcd9b9279b01f416d1e987346}\label{class_system_aa1c55edbcd9b9279b01f416d1e987346}} 
+\index{System@{System}!operator/@{operator/}}
+\index{operator/@{operator/}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double System\+::operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system_interface}{System\+Interface}} \&}]{sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This is the overloaded \char`\"{}/\char`\"{} operator for the \mbox{\hyperlink{class_system}{System}} Class. 
+
+Implements \mbox{\hyperlink{class_system_interface_ac87a00459ada917907ab624d5abad43a}{System\+Interface}}.
+
+
+
+Definition at line \mbox{\hyperlink{system_8cpp_source_l00078}{78}} of file \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+\mbox{\Hypertarget{class_system_a9baec86de531db675fe23edaa74d6e4a}\label{class_system_a9baec86de531db675fe23edaa74d6e4a}} 
+\index{System@{System}!operator=@{operator=}}
+\index{operator=@{operator=}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_system}{System}} \& System\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system}{System}} \&}]{sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This is the overloaded assignment operator for the \mbox{\hyperlink{class_system}{System}} Class. 
+
+Definition at line \mbox{\hyperlink{system_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+\mbox{\Hypertarget{class_system_a26cbee8054a1973f77380dd6d9f28379}\label{class_system_a26cbee8054a1973f77380dd6d9f28379}} 
+\index{System@{System}!setName@{setName}}
+\index{setName@{setName}!System@{System}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void System\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{sys\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the name attribute in the \mbox{\hyperlink{class_system}{System}} Class. 
+\begin{DoxyParams}{Parameters}
+{\em sys\+Name} & which will be set to the current \mbox{\hyperlink{class_system}{System}}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_system_interface_a280dc88085364df4cd8d36d50c6f18c5}{System\+Interface}}.
+
+
+
+Definition at line \mbox{\hyperlink{system_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+\mbox{\Hypertarget{class_system_a931178516c532c6e0f3f51d0dc5654fc}\label{class_system_a931178516c532c6e0f3f51d0dc5654fc}} 
+\index{System@{System}!setValue@{setValue}}
+\index{setValue@{setValue}!System@{System}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily void System\+::set\+Value (\begin{DoxyParamCaption}\item[{double}]{sys\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the value attribute in the \mbox{\hyperlink{class_system}{System}} Class. 
+\begin{DoxyParams}{Parameters}
+{\em sys\+Value} & which will be set to the current \mbox{\hyperlink{class_system}{System}}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_system_interface_afa9170b75f60d1dd4ed22462466870d3}{System\+Interface}}.
+
+
+
+Definition at line \mbox{\hyperlink{system_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{system_8cpp_source}{system.\+cpp}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_system_a4f3bf5ddad62048a5ba0f424952c3e35}\label{class_system_a4f3bf5ddad62048a5ba0f424952c3e35}} 
+\index{System@{System}!Flow@{Flow}}
+\index{Flow@{Flow}!System@{System}}
+\doxysubsubsection{\texorpdfstring{Flow}{Flow}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_flow}{Flow}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+This Class represents a flow in the General Systems Theory implemented in this code. 
+
+Definition at line \mbox{\hyperlink{system_8h_source_l00022}{22}} of file \mbox{\hyperlink{system_8h_source}{system.\+h}}.
+
+\mbox{\Hypertarget{class_system_a2bf2a0e9b454c55aa5dcb5aa4698697b}\label{class_system_a2bf2a0e9b454c55aa5dcb5aa4698697b}} 
+\index{System@{System}!Model@{Model}}
+\index{Model@{Model}!System@{System}}
+\doxysubsubsection{\texorpdfstring{Model}{Model}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_model}{Model}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+This Class represents a model in the General Systems Theory implemented in this code. 
+
+Definition at line \mbox{\hyperlink{system_8h_source_l00023}{23}} of file \mbox{\hyperlink{system_8h_source}{system.\+h}}.
+
+\mbox{\Hypertarget{class_system_a6682d04f47a9097422c08f54782ffaab}\label{class_system_a6682d04f47a9097422c08f54782ffaab}} 
+\index{System@{System}!UnitSystem@{UnitSystem}}
+\index{UnitSystem@{UnitSystem}!System@{System}}
+\doxysubsubsection{\texorpdfstring{UnitSystem}{UnitSystem}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_unit_system}{Unit\+System}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+This Class is used to test the copy constructor and assignment operator of the \mbox{\hyperlink{class_system}{System}} class. 
+
+Definition at line \mbox{\hyperlink{system_8h_source_l00024}{24}} of file \mbox{\hyperlink{system_8h_source}{system.\+h}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_system_a29fe2868c0d56fdebc67f1bef5d5cca3}\label{class_system_a29fe2868c0d56fdebc67f1bef5d5cca3}} 
+\index{System@{System}!name@{name}}
+\index{name@{name}!System@{System}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string System\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+This attribute contains a name for the \mbox{\hyperlink{class_system}{System}}. 
+
+Definition at line \mbox{\hyperlink{system_8h_source_l00012}{12}} of file \mbox{\hyperlink{system_8h_source}{system.\+h}}.
+
+\mbox{\Hypertarget{class_system_a879687b1125ef20757c2a61345fedd00}\label{class_system_a879687b1125ef20757c2a61345fedd00}} 
+\index{System@{System}!value@{value}}
+\index{value@{value}!System@{System}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily double System\+::value\hspace{0.3cm}{\ttfamily [protected]}}
+
+This attribute contains the actual value of the \mbox{\hyperlink{class_system}{System}}. 
+
+Definition at line \mbox{\hyperlink{system_8h_source_l00013}{13}} of file \mbox{\hyperlink{system_8h_source}{system.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{system_8h}{system.\+h}}\item 
+src/\mbox{\hyperlink{system_8cpp}{system.\+cpp}}\end{DoxyCompactItemize}

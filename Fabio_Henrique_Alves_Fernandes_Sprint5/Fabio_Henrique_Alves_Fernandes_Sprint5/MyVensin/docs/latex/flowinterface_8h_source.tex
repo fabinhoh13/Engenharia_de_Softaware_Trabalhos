@@ -1,0 +1,44 @@
+\hypertarget{flowinterface_8h_source}{}\doxysection{flowinterface.\+h}
+\label{flowinterface_8h_source}\index{src/flowinterface.h@{src/flowinterface.h}}
+\mbox{\hyperlink{flowinterface_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef FLOW\_INTERFACE\_H}}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00002}00002 \textcolor{preprocessor}{\#define FLOW\_INTERFACE\_H}}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{systeminterface_8h}{systeminterface.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00010}\mbox{\hyperlink{class_flow_inteface}{00010}} \textcolor{keyword}{class }\mbox{\hyperlink{class_flow_inteface}{FlowInteface}}\{}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00011}00011     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00012}00012         \textcolor{comment}{// Classes Amigas}}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00013}00013         \textcolor{comment}{// friend class ModelInterface; /*!< This Class represents a model in the General Systems Theory implemented in this code. */}}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00014}00014         \textcolor{comment}{// friend class Model; /*!< This Class represents a model in the General Systems Theory implemented in this code. */}}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00015}00015         \textcolor{comment}{// friend class UnitFlow; /*!< This Class is used to test the copy constructor and assignment operator of the FlowInterface class. */}}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00017}00017         \textcolor{comment}{// Destrutor}}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00021}\mbox{\hyperlink{class_flow_inteface_a171c2a6fbb1d971b9f342b3b66643232}{00021}} \textcolor{comment}{}        \textcolor{keyword}{virtual} \mbox{\hyperlink{class_flow_inteface_a171c2a6fbb1d971b9f342b3b66643232}{\string~FlowInteface}}() \{\}}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00023}00023         \textcolor{comment}{// Funçaõ que executa a equação}}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00028}\mbox{\hyperlink{class_flow_inteface_a6e565de2c20a9d0e28734d8fb91aff00}{00028}} \textcolor{comment}{}        \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_flow_inteface_a6e565de2c20a9d0e28734d8fb91aff00}{execute}}() = 0;}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00030}00030         \textcolor{comment}{// Setters}}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00035}\mbox{\hyperlink{class_flow_inteface_a8006e004344774ba910991e10f495ea2}{00035}} \textcolor{comment}{}        \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_inteface_a8006e004344774ba910991e10f495ea2}{setName}}(\textcolor{keywordtype}{string} flowName) = 0;}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00041}\mbox{\hyperlink{class_flow_inteface_a24070b76342b73a2c83819f28298c83d}{00041}}         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_inteface_a24070b76342b73a2c83819f28298c83d}{setSource}}(\mbox{\hyperlink{class_system_interface}{SystemInterface}}* sourceSys) = 0;}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00047}\mbox{\hyperlink{class_flow_inteface_a37b877a5cdc79bbbc28f5d43bdfeb92a}{00047}}         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_inteface_a37b877a5cdc79bbbc28f5d43bdfeb92a}{setTarget}}(\mbox{\hyperlink{class_system_interface}{SystemInterface}}* targetSys) = 0;}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00049}00049         \textcolor{comment}{// Getters}}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00054}\mbox{\hyperlink{class_flow_inteface_ac9e611a30c6321135403d7068fd210dd}{00054}} \textcolor{comment}{}        \textcolor{keyword}{virtual} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_flow_inteface_ac9e611a30c6321135403d7068fd210dd}{getName}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00059}\mbox{\hyperlink{class_flow_inteface_a35a913c36594d328d05ae5212777b897}{00059}}         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_system_interface}{SystemInterface}}* \mbox{\hyperlink{class_flow_inteface_a35a913c36594d328d05ae5212777b897}{getSource}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00064}\mbox{\hyperlink{class_flow_inteface_abad003c5007e53db59e91e38192dcfef}{00064}}         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_system_interface}{SystemInterface}}* \mbox{\hyperlink{class_flow_inteface_abad003c5007e53db59e91e38192dcfef}{getTarget}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00066}00066         \textcolor{comment}{// Funções que limpam os fluxos de entrada e saída}}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00070}\mbox{\hyperlink{class_flow_inteface_aac1ea3e5da20cd67333209e376ee43cf}{00070}} \textcolor{comment}{}        \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_inteface_aac1ea3e5da20cd67333209e376ee43cf}{clearSource}}() = 0;}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00074}\mbox{\hyperlink{class_flow_inteface_a333b8dff9c152d81bbe172b195c0fcc1}{00074}}         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_inteface_a333b8dff9c152d81bbe172b195c0fcc1}{clearTarget}}() = 0;}
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00075}00075 \};  }
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{flowinterface_8h_source_l00078}00078 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

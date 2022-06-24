@@ -1,0 +1,218 @@
+\hypertarget{class_system_interface}{}\doxysection{System\+Interface Class Reference}
+\label{class_system_interface}\index{SystemInterface@{SystemInterface}}
+
+
+Class \mbox{\hyperlink{class_system_interface}{System\+Interface}}.  
+
+
+
+
+{\ttfamily \#include $<$systeminterface.\+h$>$}
+
+
+
+Inheritance diagram for System\+Interface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{class_system_interface__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_system_interface_aa5513d8af1f6c960ce8ca1b85e8ebabe}{$\sim$\+System\+Interface}} ()
+\item 
+virtual void \mbox{\hyperlink{class_system_interface_a280dc88085364df4cd8d36d50c6f18c5}{set\+Name}} (string sys\+Name)=0
+\item 
+virtual void \mbox{\hyperlink{class_system_interface_afa9170b75f60d1dd4ed22462466870d3}{set\+Value}} (double sys\+Value)=0
+\item 
+virtual string \mbox{\hyperlink{class_system_interface_a32455d8e52d0541cd87bbeb6fe9a24f7}{get\+Name}} () const =0
+\item 
+virtual double \mbox{\hyperlink{class_system_interface_a7d6436985e98f048b28c3fb2136a56a0}{get\+Value}} () const =0
+\item 
+virtual double \mbox{\hyperlink{class_system_interface_ad065bf1dd654dcf04252fd128fe4a855}{operator+}} (const \mbox{\hyperlink{class_system_interface}{System\+Interface}} \&sys)=0
+\item 
+virtual double \mbox{\hyperlink{class_system_interface_a9cd9f3686b6d3962475a346b3c099cb3}{operator+}} (const double \&value\+Sys)=0
+\item 
+virtual double \mbox{\hyperlink{class_system_interface_a107d164a414427bd59639a38ca737ad6}{operator-\/}} (const \mbox{\hyperlink{class_system_interface}{System\+Interface}} \&sys)=0
+\item 
+virtual double \mbox{\hyperlink{class_system_interface_af010f50c923d0959e24b65eb97df3875}{operator-\/}} (const double \&value\+Sys)=0
+\item 
+virtual double \mbox{\hyperlink{class_system_interface_a430a8fabbdba092f9b0719022a86f163}{operator$\ast$}} (const \mbox{\hyperlink{class_system_interface}{System\+Interface}} \&sys)=0
+\item 
+virtual double \mbox{\hyperlink{class_system_interface_ab49822b5a2d0e38bd318f485615242f6}{operator$\ast$}} (const double \&value\+Sys)=0
+\item 
+virtual double \mbox{\hyperlink{class_system_interface_ac87a00459ada917907ab624d5abad43a}{operator/}} (const \mbox{\hyperlink{class_system_interface}{System\+Interface}} \&sys)=0
+\item 
+virtual double \mbox{\hyperlink{class_system_interface_a8d774b5c549e414e4b2ec224898df397}{operator/}} (const double \&value\+Sys)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{class_system_interface}{System\+Interface}}. 
+
+This Class represents a system in the General Systems Theory implemented in this code. 
+
+Definition at line \mbox{\hyperlink{systeminterface_8h_source_l00016}{16}} of file \mbox{\hyperlink{systeminterface_8h_source}{systeminterface.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_system_interface_aa5513d8af1f6c960ce8ca1b85e8ebabe}\label{class_system_interface_aa5513d8af1f6c960ce8ca1b85e8ebabe}} 
+\index{SystemInterface@{SystemInterface}!````~SystemInterface@{$\sim$SystemInterface}}
+\index{````~SystemInterface@{$\sim$SystemInterface}!SystemInterface@{SystemInterface}}
+\doxysubsubsection{\texorpdfstring{$\sim$SystemInterface()}{~SystemInterface()}}
+{\footnotesize\ttfamily virtual System\+Interface\+::$\sim$\+System\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+This is the default destructor for the \mbox{\hyperlink{class_system_interface}{System\+Interface}} Class. 
+
+Definition at line \mbox{\hyperlink{systeminterface_8h_source_l00023}{23}} of file \mbox{\hyperlink{systeminterface_8h_source}{systeminterface.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_system_interface_a32455d8e52d0541cd87bbeb6fe9a24f7}\label{class_system_interface_a32455d8e52d0541cd87bbeb6fe9a24f7}} 
+\index{SystemInterface@{SystemInterface}!getName@{getName}}
+\index{getName@{getName}!SystemInterface@{SystemInterface}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual string System\+Interface\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the name attribute in the \mbox{\hyperlink{class_system_interface}{System\+Interface}} Class. \begin{DoxyReturn}{Returns}
+string -\/ the content name attribute. ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_system_a47ece132a04247cd74aea11537830bd4}{System}}.
+
+\mbox{\Hypertarget{class_system_interface_a7d6436985e98f048b28c3fb2136a56a0}\label{class_system_interface_a7d6436985e98f048b28c3fb2136a56a0}} 
+\index{SystemInterface@{SystemInterface}!getValue@{getValue}}
+\index{getValue@{getValue}!SystemInterface@{SystemInterface}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily virtual double System\+Interface\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the value attribute in the \mbox{\hyperlink{class_system_interface}{System\+Interface}} Class. \begin{DoxyReturn}{Returns}
+double -\/ the content value attribute. ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_system_aa7d17369d1034e7d8643a63f69d1901d}{System}}.
+
+\mbox{\Hypertarget{class_system_interface_ab49822b5a2d0e38bd318f485615242f6}\label{class_system_interface_ab49822b5a2d0e38bd318f485615242f6}} 
+\index{SystemInterface@{SystemInterface}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!SystemInterface@{SystemInterface}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual double System\+Interface\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const double \&}]{value\+Sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This is the overloaded \char`\"{}$\ast$\char`\"{}"{} operator for the \mbox{\hyperlink{class_system_interface}{System\+Interface}} Class. 
+
+Implemented in \mbox{\hyperlink{class_system_a6bd3086e3968cc5e4857b5898c8efbb2}{System}}.
+
+\mbox{\Hypertarget{class_system_interface_a430a8fabbdba092f9b0719022a86f163}\label{class_system_interface_a430a8fabbdba092f9b0719022a86f163}} 
+\index{SystemInterface@{SystemInterface}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!SystemInterface@{SystemInterface}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual double System\+Interface\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system_interface}{System\+Interface}} \&}]{sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This is the overloaded \char`\"{}$\ast$\char`\"{} operator for the \mbox{\hyperlink{class_system_interface}{System\+Interface}} Class. 
+
+Implemented in \mbox{\hyperlink{class_system_a1395588ad506671bbe0d4b0fff0a7b6d}{System}}.
+
+\mbox{\Hypertarget{class_system_interface_a9cd9f3686b6d3962475a346b3c099cb3}\label{class_system_interface_a9cd9f3686b6d3962475a346b3c099cb3}} 
+\index{SystemInterface@{SystemInterface}!operator+@{operator+}}
+\index{operator+@{operator+}!SystemInterface@{SystemInterface}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual double System\+Interface\+::operator+ (\begin{DoxyParamCaption}\item[{const double \&}]{value\+Sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This is the overloaded \char`\"{}+\char`\"{} operator for the \mbox{\hyperlink{class_system_interface}{System\+Interface}} Class. 
+
+Implemented in \mbox{\hyperlink{class_system_aaceb6f53abba30478a743aa20ca0a525}{System}}.
+
+\mbox{\Hypertarget{class_system_interface_ad065bf1dd654dcf04252fd128fe4a855}\label{class_system_interface_ad065bf1dd654dcf04252fd128fe4a855}} 
+\index{SystemInterface@{SystemInterface}!operator+@{operator+}}
+\index{operator+@{operator+}!SystemInterface@{SystemInterface}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual double System\+Interface\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system_interface}{System\+Interface}} \&}]{sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This is the overloaded \char`\"{}+\char`\"{} operator for the \mbox{\hyperlink{class_system_interface}{System\+Interface}} Class. 
+
+Implemented in \mbox{\hyperlink{class_system_a82c8692e3657e597148f1d97818e522b}{System}}.
+
+\mbox{\Hypertarget{class_system_interface_af010f50c923d0959e24b65eb97df3875}\label{class_system_interface_af010f50c923d0959e24b65eb97df3875}} 
+\index{SystemInterface@{SystemInterface}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!SystemInterface@{SystemInterface}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual double System\+Interface\+::operator-\/ (\begin{DoxyParamCaption}\item[{const double \&}]{value\+Sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This is the overloaded \char`\"{}-\/\char`\"{} operator for the \mbox{\hyperlink{class_system_interface}{System\+Interface}} Class. 
+
+Implemented in \mbox{\hyperlink{class_system_a6754b617d92ff06e7547b274e059ecb1}{System}}.
+
+\mbox{\Hypertarget{class_system_interface_a107d164a414427bd59639a38ca737ad6}\label{class_system_interface_a107d164a414427bd59639a38ca737ad6}} 
+\index{SystemInterface@{SystemInterface}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!SystemInterface@{SystemInterface}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual double System\+Interface\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system_interface}{System\+Interface}} \&}]{sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This is the overloaded \char`\"{}-\/\char`\"{} operator for the \mbox{\hyperlink{class_system_interface}{System\+Interface}} Class. 
+
+Implemented in \mbox{\hyperlink{class_system_a2895b024e5dc802673636964b3db577a}{System}}.
+
+\mbox{\Hypertarget{class_system_interface_a8d774b5c549e414e4b2ec224898df397}\label{class_system_interface_a8d774b5c549e414e4b2ec224898df397}} 
+\index{SystemInterface@{SystemInterface}!operator/@{operator/}}
+\index{operator/@{operator/}!SystemInterface@{SystemInterface}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual double System\+Interface\+::operator/ (\begin{DoxyParamCaption}\item[{const double \&}]{value\+Sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This is the overloaded \char`\"{}/\char`\"{} operator for the \mbox{\hyperlink{class_system_interface}{System\+Interface}} Class. 
+
+Implemented in \mbox{\hyperlink{class_system_aaa6e2b6fcab655235d9d2c2f886513c7}{System}}.
+
+\mbox{\Hypertarget{class_system_interface_ac87a00459ada917907ab624d5abad43a}\label{class_system_interface_ac87a00459ada917907ab624d5abad43a}} 
+\index{SystemInterface@{SystemInterface}!operator/@{operator/}}
+\index{operator/@{operator/}!SystemInterface@{SystemInterface}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual double System\+Interface\+::operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system_interface}{System\+Interface}} \&}]{sys }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This is the overloaded \char`\"{}/\char`\"{} operator for the \mbox{\hyperlink{class_system_interface}{System\+Interface}} Class. 
+
+Implemented in \mbox{\hyperlink{class_system_aa1c55edbcd9b9279b01f416d1e987346}{System}}.
+
+\mbox{\Hypertarget{class_system_interface_a280dc88085364df4cd8d36d50c6f18c5}\label{class_system_interface_a280dc88085364df4cd8d36d50c6f18c5}} 
+\index{SystemInterface@{SystemInterface}!setName@{setName}}
+\index{setName@{setName}!SystemInterface@{SystemInterface}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily virtual void System\+Interface\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{sys\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the name attribute in the \mbox{\hyperlink{class_system_interface}{System\+Interface}} Class. 
+\begin{DoxyParams}{Parameters}
+{\em sys\+Name} & which will be set to the current system. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_system_a26cbee8054a1973f77380dd6d9f28379}{System}}.
+
+\mbox{\Hypertarget{class_system_interface_afa9170b75f60d1dd4ed22462466870d3}\label{class_system_interface_afa9170b75f60d1dd4ed22462466870d3}} 
+\index{SystemInterface@{SystemInterface}!setValue@{setValue}}
+\index{setValue@{setValue}!SystemInterface@{SystemInterface}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily virtual void System\+Interface\+::set\+Value (\begin{DoxyParamCaption}\item[{double}]{sys\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the value attribute in the \mbox{\hyperlink{class_system_interface}{System\+Interface}} Class. 
+\begin{DoxyParams}{Parameters}
+{\em sys\+Value} & which will be set to the current system. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_system_a931178516c532c6e0f3f51d0dc5654fc}{System}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{systeminterface_8h}{systeminterface.\+h}}\end{DoxyCompactItemize}

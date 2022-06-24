@@ -1,0 +1,14 @@
+release/addvendedor.o
+release/funcionarios.o
+release/login.o
+release/main.o
+release/mainwindow.o
+release/telavendedores.o
+release/veiculos.o
+release/vendas.o
+release/qrc_qmake_qmake_qm_files.o
+release/moc_addvendedor.o
+release/moc_login.o
+release/moc_mainwindow.o
+release/moc_telavendedores.o
+release/moc_vendas.o

@@ -1,0 +1,65 @@
+\hypertarget{model_8h_source}{}\doxysection{model.\+h}
+\label{model_8h_source}\index{src/model.h@{src/model.h}}
+\mbox{\hyperlink{model_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef MODEL\_H}}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00002}00002 \textcolor{preprocessor}{\#define MODEL\_H}}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{modelinterface_8h}{modelinterface.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00010}\mbox{\hyperlink{class_model}{00010}} \textcolor{keyword}{class }\mbox{\hyperlink{class_model}{Model}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_model_interface}{ModelInterface}}\{}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00011}00011     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00012}\mbox{\hyperlink{class_model_a2d9aef6a80a205a03e4e99b5483af9a0}{00012}}         \textcolor{keywordtype}{string} \mbox{\hyperlink{class_model_a2d9aef6a80a205a03e4e99b5483af9a0}{name}}; }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00013}\mbox{\hyperlink{class_model_ac08e6be5375c12b4f09dfd3e88552e46}{00013}}         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_model_ac08e6be5375c12b4f09dfd3e88552e46}{time}}; }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00015}\mbox{\hyperlink{class_model_a1dfbc73e8f1eadd4417a0c972504db47}{00015}}         vector <SystemInterface*> \mbox{\hyperlink{class_model_a1dfbc73e8f1eadd4417a0c972504db47}{systems}}; }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00016}\mbox{\hyperlink{class_model_aabe75d24c9b18c6ca413dd20db26b9d9}{00016}}         vector <FlowInteface*> \mbox{\hyperlink{class_model_aabe75d24c9b18c6ca413dd20db26b9d9}{flows}}; }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00017}\mbox{\hyperlink{class_model_a231532b84cd679aa3d9bda6b476ea108}{00017}}         \textcolor{keyword}{static} vector<ModelInterface*> \mbox{\hyperlink{class_model_a231532b84cd679aa3d9bda6b476ea108}{models}};}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00019}00019     \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00024}00024         \mbox{\hyperlink{class_model}{Model}} (\textcolor{keyword}{const} \mbox{\hyperlink{class_model}{Model}} \&model);}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00029}00029         \textcolor{keywordtype}{void} operator= (\textcolor{keyword}{const} \mbox{\hyperlink{class_model}{Model}} \&model);}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00030}00030     }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00031}00031     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00032}\mbox{\hyperlink{class_model_a6d6f4acf59418e20d79add30c84d5273}{00032}}         \textcolor{keyword}{typedef} vector<SystemInterface*> :: iterator \mbox{\hyperlink{class_model_a6d6f4acf59418e20d79add30c84d5273}{systemIterator}};}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00033}\mbox{\hyperlink{class_model_a46388d46b3fc75ff790610d47cafc141}{00033}}         \textcolor{keyword}{typedef} vector<FlowInteface*> :: iterator \mbox{\hyperlink{class_model_a46388d46b3fc75ff790610d47cafc141}{flowIterator}};}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00035}00035         \mbox{\hyperlink{class_model_a6d6f4acf59418e20d79add30c84d5273}{systemIterator}} \mbox{\hyperlink{class_model_a79fe15fb9d2fbd880eaaf38b0f03e17e}{beginSystems}}(); }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00036}00036         \mbox{\hyperlink{class_model_a6d6f4acf59418e20d79add30c84d5273}{systemIterator}} \mbox{\hyperlink{class_model_a815cd0c70ae9cb2344cc7256e2dda35f}{endSystems}}(); }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00037}00037         \mbox{\hyperlink{class_model_a46388d46b3fc75ff790610d47cafc141}{flowIterator}} \mbox{\hyperlink{class_model_a2c1ca83c40f2dea05e01275651a476b1}{beginFlows}}(); }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00038}00038         \mbox{\hyperlink{class_model_a46388d46b3fc75ff790610d47cafc141}{flowIterator}} \mbox{\hyperlink{class_model_abfae233cbcbc3b9875ee87698f1e140c}{endFlows}}(); }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00046}00046         \mbox{\hyperlink{class_model}{Model}} (\textcolor{keywordtype}{string} \mbox{\hyperlink{class_model_a2d9aef6a80a205a03e4e99b5483af9a0}{name}} = \textcolor{stringliteral}{"{}"{}}, \textcolor{keywordtype}{double} \mbox{\hyperlink{class_model_ac08e6be5375c12b4f09dfd3e88552e46}{time}} = 0);}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00047}00047         }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00051}00051         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_model_ad6ebd2062a0b823db841a0b88baac4c0}{\string~Model}}();}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00059}00059         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_abb4f75e030f631514a6b5c83f2152f33}{execute}} (\textcolor{keywordtype}{double} start = 0, \textcolor{keywordtype}{double} \textcolor{keyword}{final} = 0, \textcolor{keywordtype}{double} increment = 1);}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00062}00062         \mbox{\hyperlink{class_model_interface}{ModelInterface}}* \mbox{\hyperlink{class_model_a7e5c321176b8730af9a6f599c740f671}{createModel}}(\textcolor{keywordtype}{string} \mbox{\hyperlink{class_model_a2d9aef6a80a205a03e4e99b5483af9a0}{name}}, \textcolor{keywordtype}{double} \mbox{\hyperlink{class_model_ac08e6be5375c12b4f09dfd3e88552e46}{time}});}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00064}00064         \mbox{\hyperlink{class_system_interface}{SystemInterface}}* \mbox{\hyperlink{class_model_a403efd83431414dcf025bb7f253aa878}{createSystem}}(\textcolor{keywordtype}{string} \mbox{\hyperlink{class_model_a2d9aef6a80a205a03e4e99b5483af9a0}{name}}, \textcolor{keywordtype}{double} value);}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00071}00071         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a9e162fc3ba38331ca248fb02d48128c3}{add}} (\mbox{\hyperlink{class_system_interface}{SystemInterface}} *sys);}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00076}00076         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_ac8e60a6c5ef1f484f1144c301ee6e524}{remove}} (\mbox{\hyperlink{class_system_interface}{SystemInterface}} *sys);}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00082}00082         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a9e162fc3ba38331ca248fb02d48128c3}{add}} (\mbox{\hyperlink{class_flow_inteface}{FlowInteface}} *flow);}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00087}00087         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_ac8e60a6c5ef1f484f1144c301ee6e524}{remove}} (\mbox{\hyperlink{class_flow_inteface}{FlowInteface}} *flow);}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00093}00093         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a7bc7a5e33c18d74d9db574dd973d2cb1}{setName}}(\textcolor{keywordtype}{string} modelName);}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00098}00098         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a33ca31884793d1061794affae16e009d}{setTime}}(\textcolor{keywordtype}{double} currentTime);}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00104}00104         \textcolor{keywordtype}{string} \mbox{\hyperlink{class_model_a65e1711255fbab5883708002ef89f773}{getName}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00109}00109         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_model_a06d9f606f122597dc5426811f765987a}{getTime}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00114}00114         \mbox{\hyperlink{class_system_interface}{SystemInterface}}* \mbox{\hyperlink{class_model_af9f8f00dc249e43f3eb833e32cadda99}{getSystem}}(\textcolor{keywordtype}{int} index);}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00119}00119         \mbox{\hyperlink{class_flow_inteface}{FlowInteface}}* \mbox{\hyperlink{class_model_affecac5e2bf9288a8213b70e3faecb30}{getFlow}}(\textcolor{keywordtype}{int} index);}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00125}00125         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a4e7adee1c2d46b5d0dd46ae26898dacb}{incrementTime}}(\textcolor{keywordtype}{double} increment);}
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00126}00126 }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00128}00128 \};      }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00129}00129 }
+\DoxyCodeLine{\Hypertarget{model_8h_source_l00130}00130 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

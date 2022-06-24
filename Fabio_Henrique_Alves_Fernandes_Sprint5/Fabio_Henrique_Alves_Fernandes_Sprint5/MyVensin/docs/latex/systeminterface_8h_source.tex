@@ -1,0 +1,54 @@
+\hypertarget{systeminterface_8h_source}{}\doxysection{systeminterface.\+h}
+\label{systeminterface_8h_source}\index{src/systeminterface.h@{src/systeminterface.h}}
+\mbox{\hyperlink{systeminterface_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef SYSTEM\_INTERFACE\_H}}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00002}00002 \textcolor{preprocessor}{\#define SYSTEM\_INTERFACE\_H}}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00004}00004 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <ios>}}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00009}00009 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00016}\mbox{\hyperlink{class_system_interface}{00016}} \textcolor{keyword}{class }\mbox{\hyperlink{class_system_interface}{SystemInterface}} \{}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00018}00018     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00019}00019         \textcolor{comment}{// Destrutor}}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00023}\mbox{\hyperlink{class_system_interface_aa5513d8af1f6c960ce8ca1b85e8ebabe}{00023}} \textcolor{comment}{}        \textcolor{keyword}{virtual} \mbox{\hyperlink{class_system_interface_aa5513d8af1f6c960ce8ca1b85e8ebabe}{\string~SystemInterface}}()\{\}}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00025}00025         \textcolor{comment}{//Setters}}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00030}\mbox{\hyperlink{class_system_interface_a280dc88085364df4cd8d36d50c6f18c5}{00030}} \textcolor{comment}{}        \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_system_interface_a280dc88085364df4cd8d36d50c6f18c5}{setName}}(\textcolor{keywordtype}{string} sysName) = 0;}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00035}\mbox{\hyperlink{class_system_interface_afa9170b75f60d1dd4ed22462466870d3}{00035}}         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_system_interface_afa9170b75f60d1dd4ed22462466870d3}{setValue}}(\textcolor{keywordtype}{double} sysValue) = 0;}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00037}00037         \textcolor{comment}{// Getters}}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00042}\mbox{\hyperlink{class_system_interface_a32455d8e52d0541cd87bbeb6fe9a24f7}{00042}} \textcolor{comment}{}        \textcolor{keyword}{virtual} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_system_interface_a32455d8e52d0541cd87bbeb6fe9a24f7}{getName}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00047}\mbox{\hyperlink{class_system_interface_a7d6436985e98f048b28c3fb2136a56a0}{00047}}         \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_interface_a7d6436985e98f048b28c3fb2136a56a0}{getValue}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00049}00049         \textcolor{comment}{// Sobrecargas}}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00050}00050         \textcolor{comment}{//Operador +}}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00054}\mbox{\hyperlink{class_system_interface_ad065bf1dd654dcf04252fd128fe4a855}{00054}} \textcolor{comment}{}        \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_interface_ad065bf1dd654dcf04252fd128fe4a855}{operator+}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_system_interface}{SystemInterface}}\& sys) = 0;}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00058}\mbox{\hyperlink{class_system_interface_a9cd9f3686b6d3962475a346b3c099cb3}{00058}}         \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_interface_a9cd9f3686b6d3962475a346b3c099cb3}{operator+}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\& valueSys) = 0;}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00060}00060         \textcolor{comment}{// Operador -\/}}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00064}\mbox{\hyperlink{class_system_interface_a107d164a414427bd59639a38ca737ad6}{00064}} \textcolor{comment}{}        \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_interface_a107d164a414427bd59639a38ca737ad6}{operator-\/}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_system_interface}{SystemInterface}}\& sys) = 0;}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00068}\mbox{\hyperlink{class_system_interface_af010f50c923d0959e24b65eb97df3875}{00068}}         \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_interface_af010f50c923d0959e24b65eb97df3875}{operator-\/}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\& valueSys) = 0;}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00070}00070         \textcolor{comment}{// Operador *}}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00074}\mbox{\hyperlink{class_system_interface_a430a8fabbdba092f9b0719022a86f163}{00074}} \textcolor{comment}{}        \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_interface_a430a8fabbdba092f9b0719022a86f163}{operator*}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_system_interface}{SystemInterface}}\& sys) = 0;}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00078}\mbox{\hyperlink{class_system_interface_ab49822b5a2d0e38bd318f485615242f6}{00078}}         \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_interface_ab49822b5a2d0e38bd318f485615242f6}{operator*}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\& valueSys) = 0;}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00080}00080         \textcolor{comment}{// Operador /}}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00084}\mbox{\hyperlink{class_system_interface_ac87a00459ada917907ab624d5abad43a}{00084}} \textcolor{comment}{}        \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_interface_ac87a00459ada917907ab624d5abad43a}{operator/}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_system_interface}{SystemInterface}}\& sys) = 0;}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00088}\mbox{\hyperlink{class_system_interface_a8d774b5c549e414e4b2ec224898df397}{00088}}         \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_interface_a8d774b5c549e414e4b2ec224898df397}{operator/}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double}\& valueSys) = 0;}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00091}00091 \};}
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{systeminterface_8h_source_l00094}00094 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
